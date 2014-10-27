@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1460666F19CFE5D5001EDBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460666E19CFE5D5001EDBA2 /* Foundation.framework */; };
+		1460667119CFE5D5001EDBA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460667019CFE5D5001EDBA2 /* CoreGraphics.framework */; };
+		1460667319CFE5D5001EDBA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460667219CFE5D5001EDBA2 /* UIKit.framework */; };
+		1460667919CFE5D5001EDBA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1460667719CFE5D5001EDBA2 /* InfoPlist.strings */; };
+		1460667B19CFE5D5001EDBA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460667A19CFE5D5001EDBA2 /* main.m */; };
+		1460667F19CFE5D5001EDBA2 /* neonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460667E19CFE5D5001EDBA2 /* neonAppDelegate.m */; };
+		1460668219CFE5D5001EDBA2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1460668019CFE5D5001EDBA2 /* Main_iPhone.storyboard */; };
+		1460668519CFE5D5001EDBA2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1460668319CFE5D5001EDBA2 /* Main_iPad.storyboard */; };
+		1460668819CFE5D5001EDBA2 /* neonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460668719CFE5D5001EDBA2 /* neonViewController.m */; };
+		1460668A19CFE5D5001EDBA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1460668919CFE5D5001EDBA2 /* Images.xcassets */; };
+		1460669119CFE5D5001EDBA2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460669019CFE5D5001EDBA2 /* XCTest.framework */; };
+		1460669219CFE5D5001EDBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460666E19CFE5D5001EDBA2 /* Foundation.framework */; };
+		1460669319CFE5D5001EDBA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460667219CFE5D5001EDBA2 /* UIKit.framework */; };
+		1460669B19CFE5D5001EDBA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1460669919CFE5D5001EDBA2 /* InfoPlist.strings */; };
+		1460669D19CFE5D5001EDBA2 /* neon_for_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1460669C19CFE5D5001EDBA2 /* neon_for_iOSTests.m */; };
+		146066A719CFE606001EDBA2 /* testdav.c in Sources */ = {isa = PBXBuildFile; fileRef = 146066A619CFE606001EDBA2 /* testdav.c */; };
+		146066BE19CFEB29001EDBA2 /* test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 146066BD19CFEB29001EDBA2 /* test.bundle */; };
+		14D9792119FE3C1400FA9B9B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9791C19FE3C1400FA9B9B /* libcrypto.a */; };
+		14D9792219FE3C1400FA9B9B /* libexpat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9791D19FE3C1400FA9B9B /* libexpat.a */; };
+		14D9792319FE3C1400FA9B9B /* libneon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9791E19FE3C1400FA9B9B /* libneon.a */; };
+		14D9792419FE3C1400FA9B9B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9791F19FE3C1400FA9B9B /* libssl.a */; };
+		14D9792519FE3C1400FA9B9B /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D9792019FE3C1400FA9B9B /* libz.a */; };
+		14D9793419FE3FD300FA9B9B /* neon in Resources */ = {isa = PBXBuildFile; fileRef = 14D9793019FE3FD300FA9B9B /* neon */; };
+		14D9793519FE3FD300FA9B9B /* openssl in Resources */ = {isa = PBXBuildFile; fileRef = 14D9793119FE3FD300FA9B9B /* openssl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1460669419CFE5D5001EDBA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1460666319CFE5D5001EDBA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1460666A19CFE5D5001EDBA2;
+			remoteInfo = "neon-for-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1460666B19CFE5D5001EDBA2 /* neon-for-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "neon-for-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1460666E19CFE5D5001EDBA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1460667019CFE5D5001EDBA2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1460667219CFE5D5001EDBA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1460667619CFE5D5001EDBA2 /* neon-for-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "neon-for-iOS-Info.plist"; sourceTree = "<group>"; };
+		1460667819CFE5D5001EDBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1460667A19CFE5D5001EDBA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1460667C19CFE5D5001EDBA2 /* neon-for-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "neon-for-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		1460667D19CFE5D5001EDBA2 /* neonAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neonAppDelegate.h; sourceTree = "<group>"; };
+		1460667E19CFE5D5001EDBA2 /* neonAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neonAppDelegate.m; sourceTree = "<group>"; };
+		1460668119CFE5D5001EDBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1460668419CFE5D5001EDBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1460668619CFE5D5001EDBA2 /* neonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neonViewController.h; sourceTree = "<group>"; };
+		1460668719CFE5D5001EDBA2 /* neonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neonViewController.m; sourceTree = "<group>"; };
+		1460668919CFE5D5001EDBA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1460668F19CFE5D5001EDBA2 /* neon-for-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "neon-for-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1460669019CFE5D5001EDBA2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1460669819CFE5D5001EDBA2 /* neon-for-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "neon-for-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		1460669A19CFE5D5001EDBA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1460669C19CFE5D5001EDBA2 /* neon_for_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neon_for_iOSTests.m; sourceTree = "<group>"; };
+		146066A619CFE606001EDBA2 /* testdav.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testdav.c; sourceTree = "<group>"; };
+		146066BD19CFEB29001EDBA2 /* test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = test.bundle; sourceTree = "<group>"; };
+		14D9791C19FE3C1400FA9B9B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../lib/libcrypto.a; sourceTree = "<group>"; };
+		14D9791D19FE3C1400FA9B9B /* libexpat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libexpat.a; path = ../../lib/libexpat.a; sourceTree = "<group>"; };
+		14D9791E19FE3C1400FA9B9B /* libneon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libneon.a; path = ../../lib/libneon.a; sourceTree = "<group>"; };
+		14D9791F19FE3C1400FA9B9B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../lib/libssl.a; sourceTree = "<group>"; };
+		14D9792019FE3C1400FA9B9B /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../../lib/libz.a; sourceTree = "<group>"; };
+		14D9792E19FE3FD300FA9B9B /* expat_external.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = expat_external.h; path = ../../include/expat_external.h; sourceTree = "<group>"; };
+		14D9792F19FE3FD300FA9B9B /* expat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = expat.h; path = ../../include/expat.h; sourceTree = "<group>"; };
+		14D9793019FE3FD300FA9B9B /* neon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = neon; path = ../../include/neon; sourceTree = "<group>"; };
+		14D9793119FE3FD300FA9B9B /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl; path = ../../include/openssl; sourceTree = "<group>"; };
+		14D9793219FE3FD300FA9B9B /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = ../../include/zconf.h; sourceTree = "<group>"; };
+		14D9793319FE3FD300FA9B9B /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ../../include/zlib.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1460666819CFE5D5001EDBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460667119CFE5D5001EDBA2 /* CoreGraphics.framework in Frameworks */,
+				14D9792219FE3C1400FA9B9B /* libexpat.a in Frameworks */,
+				14D9792419FE3C1400FA9B9B /* libssl.a in Frameworks */,
+				1460667319CFE5D5001EDBA2 /* UIKit.framework in Frameworks */,
+				14D9792119FE3C1400FA9B9B /* libcrypto.a in Frameworks */,
+				1460666F19CFE5D5001EDBA2 /* Foundation.framework in Frameworks */,
+				14D9792519FE3C1400FA9B9B /* libz.a in Frameworks */,
+				14D9792319FE3C1400FA9B9B /* libneon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1460668C19CFE5D5001EDBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460669119CFE5D5001EDBA2 /* XCTest.framework in Frameworks */,
+				1460669319CFE5D5001EDBA2 /* UIKit.framework in Frameworks */,
+				1460669219CFE5D5001EDBA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1460666219CFE5D5001EDBA2 = {
+			isa = PBXGroup;
+			children = (
+				1460667419CFE5D5001EDBA2 /* neon-for-iOS */,
+				1460669619CFE5D5001EDBA2 /* neon-for-iOSTests */,
+				1460666D19CFE5D5001EDBA2 /* Frameworks */,
+				1460666C19CFE5D5001EDBA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1460666C19CFE5D5001EDBA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1460666B19CFE5D5001EDBA2 /* neon-for-iOS.app */,
+				1460668F19CFE5D5001EDBA2 /* neon-for-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1460666D19CFE5D5001EDBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1460666E19CFE5D5001EDBA2 /* Foundation.framework */,
+				1460667019CFE5D5001EDBA2 /* CoreGraphics.framework */,
+				1460667219CFE5D5001EDBA2 /* UIKit.framework */,
+				1460669019CFE5D5001EDBA2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1460667419CFE5D5001EDBA2 /* neon-for-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				14D9792E19FE3FD300FA9B9B /* expat_external.h */,
+				14D9792F19FE3FD300FA9B9B /* expat.h */,
+				14D9793019FE3FD300FA9B9B /* neon */,
+				14D9793119FE3FD300FA9B9B /* openssl */,
+				14D9793219FE3FD300FA9B9B /* zconf.h */,
+				14D9793319FE3FD300FA9B9B /* zlib.h */,
+				14D9791C19FE3C1400FA9B9B /* libcrypto.a */,
+				14D9791D19FE3C1400FA9B9B /* libexpat.a */,
+				14D9791E19FE3C1400FA9B9B /* libneon.a */,
+				14D9791F19FE3C1400FA9B9B /* libssl.a */,
+				14D9792019FE3C1400FA9B9B /* libz.a */,
+				146066BD19CFEB29001EDBA2 /* test.bundle */,
+				146066A619CFE606001EDBA2 /* testdav.c */,
+				1460667D19CFE5D5001EDBA2 /* neonAppDelegate.h */,
+				1460667E19CFE5D5001EDBA2 /* neonAppDelegate.m */,
+				1460668019CFE5D5001EDBA2 /* Main_iPhone.storyboard */,
+				1460668319CFE5D5001EDBA2 /* Main_iPad.storyboard */,
+				1460668619CFE5D5001EDBA2 /* neonViewController.h */,
+				1460668719CFE5D5001EDBA2 /* neonViewController.m */,
+				1460668919CFE5D5001EDBA2 /* Images.xcassets */,
+				1460667519CFE5D5001EDBA2 /* Supporting Files */,
+			);
+			path = "neon-for-iOS";
+			sourceTree = "<group>";
+		};
+		1460667519CFE5D5001EDBA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1460667619CFE5D5001EDBA2 /* neon-for-iOS-Info.plist */,
+				1460667719CFE5D5001EDBA2 /* InfoPlist.strings */,
+				1460667A19CFE5D5001EDBA2 /* main.m */,
+				1460667C19CFE5D5001EDBA2 /* neon-for-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1460669619CFE5D5001EDBA2 /* neon-for-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1460669C19CFE5D5001EDBA2 /* neon_for_iOSTests.m */,
+				1460669719CFE5D5001EDBA2 /* Supporting Files */,
+			);
+			path = "neon-for-iOSTests";
+			sourceTree = "<group>";
+		};
+		1460669719CFE5D5001EDBA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1460669819CFE5D5001EDBA2 /* neon-for-iOSTests-Info.plist */,
+				1460669919CFE5D5001EDBA2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1460666A19CFE5D5001EDBA2 /* neon-for-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 146066A019CFE5D5001EDBA2 /* Build configuration list for PBXNativeTarget "neon-for-iOS" */;
+			buildPhases = (
+				1460666719CFE5D5001EDBA2 /* Sources */,
+				1460666819CFE5D5001EDBA2 /* Frameworks */,
+				1460666919CFE5D5001EDBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "neon-for-iOS";
+			productName = "neon-for-iOS";
+			productReference = 1460666B19CFE5D5001EDBA2 /* neon-for-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1460668E19CFE5D5001EDBA2 /* neon-for-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 146066A319CFE5D5001EDBA2 /* Build configuration list for PBXNativeTarget "neon-for-iOSTests" */;
+			buildPhases = (
+				1460668B19CFE5D5001EDBA2 /* Sources */,
+				1460668C19CFE5D5001EDBA2 /* Frameworks */,
+				1460668D19CFE5D5001EDBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1460669519CFE5D5001EDBA2 /* PBXTargetDependency */,
+			);
+			name = "neon-for-iOSTests";
+			productName = "neon-for-iOSTests";
+			productReference = 1460668F19CFE5D5001EDBA2 /* neon-for-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1460666319CFE5D5001EDBA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = neon;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___VRDATA___";
+				TargetAttributes = {
+					1460668E19CFE5D5001EDBA2 = {
+						TestTargetID = 1460666A19CFE5D5001EDBA2;
+					};
+				};
+			};
+			buildConfigurationList = 1460666619CFE5D5001EDBA2 /* Build configuration list for PBXProject "neon-for-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1460666219CFE5D5001EDBA2;
+			productRefGroup = 1460666C19CFE5D5001EDBA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1460666A19CFE5D5001EDBA2 /* neon-for-iOS */,
+				1460668E19CFE5D5001EDBA2 /* neon-for-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1460666919CFE5D5001EDBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460668519CFE5D5001EDBA2 /* Main_iPad.storyboard in Resources */,
+				146066BE19CFEB29001EDBA2 /* test.bundle in Resources */,
+				1460668A19CFE5D5001EDBA2 /* Images.xcassets in Resources */,
+				1460668219CFE5D5001EDBA2 /* Main_iPhone.storyboard in Resources */,
+				14D9793419FE3FD300FA9B9B /* neon in Resources */,
+				1460667919CFE5D5001EDBA2 /* InfoPlist.strings in Resources */,
+				14D9793519FE3FD300FA9B9B /* openssl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1460668D19CFE5D5001EDBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460669B19CFE5D5001EDBA2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1460666719CFE5D5001EDBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460668819CFE5D5001EDBA2 /* neonViewController.m in Sources */,
+				146066A719CFE606001EDBA2 /* testdav.c in Sources */,
+				1460667F19CFE5D5001EDBA2 /* neonAppDelegate.m in Sources */,
+				1460667B19CFE5D5001EDBA2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1460668B19CFE5D5001EDBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1460669D19CFE5D5001EDBA2 /* neon_for_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1460669519CFE5D5001EDBA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1460666A19CFE5D5001EDBA2 /* neon-for-iOS */;
+			targetProxy = 1460669419CFE5D5001EDBA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1460667719CFE5D5001EDBA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1460667819CFE5D5001EDBA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1460668019CFE5D5001EDBA2 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1460668119CFE5D5001EDBA2 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1460668319CFE5D5001EDBA2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1460668419CFE5D5001EDBA2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1460669919CFE5D5001EDBA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1460669A19CFE5D5001EDBA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1460669E19CFE5D5001EDBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1460669F19CFE5D5001EDBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		146066A119CFE5D5001EDBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neon-for-iOS/neon-for-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../include,
+				);
+				INFOPLIST_FILE = "neon-for-iOS/neon-for-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/neon-for-iOS",
+					"/Users/cheng/Desktop/neon/neon-ios-all/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		146066A219CFE5D5001EDBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neon-for-iOS/neon-for-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../include,
+				);
+				INFOPLIST_FILE = "neon-for-iOS/neon-for-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/neon-for-iOS",
+					"/Users/cheng/Desktop/neon/neon-ios-all/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		146066A419CFE5D5001EDBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/neon-for-iOS.app/neon-for-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neon-for-iOS/neon-for-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "neon-for-iOSTests/neon-for-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		146066A519CFE5D5001EDBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/neon-for-iOS.app/neon-for-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neon-for-iOS/neon-for-iOS-Prefix.pch";
+				INFOPLIST_FILE = "neon-for-iOSTests/neon-for-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1460666619CFE5D5001EDBA2 /* Build configuration list for PBXProject "neon-for-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1460669E19CFE5D5001EDBA2 /* Debug */,
+				1460669F19CFE5D5001EDBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		146066A019CFE5D5001EDBA2 /* Build configuration list for PBXNativeTarget "neon-for-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146066A119CFE5D5001EDBA2 /* Debug */,
+				146066A219CFE5D5001EDBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		146066A319CFE5D5001EDBA2 /* Build configuration list for PBXNativeTarget "neon-for-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146066A419CFE5D5001EDBA2 /* Debug */,
+				146066A519CFE5D5001EDBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1460666319CFE5D5001EDBA2 /* Project object */;
+}

@@ -1,0 +1,115 @@
+diff -bur neon-0.30.0/configure neon-0.30.0_patch/configure
+--- neon-0.30.0/configure	2013-08-01 00:04:35.000000000 +0800
++++ neon-0.30.0_patch/configure	2014-09-22 16:43:55.000000000 +0800
+@@ -5494,11 +5494,15 @@
+ 
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h>
+ 
+ int
+ main ()
+ {
+-socket();
++socket(AF_INET, SOCK_STREAM, 0);
+   ;
+   return 0;
+ }
+@@ -5519,6 +5523,10 @@
+     LIBS="$ne_sl_save_LIBS -l$lib $NEON_LIBS"
+     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h>
+ 
+ int
+ main ()
+@@ -5566,6 +5574,10 @@
+ 
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h>
+ 
+ int
+ main ()
+@@ -5591,6 +5603,10 @@
+     LIBS="$ne_sl_save_LIBS -l$lib $NEON_LIBS"
+     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h>
+ 
+ int
+ main ()
+@@ -5749,11 +5765,18 @@
+ 
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#include <netdb.h>
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h>
++
+ 
+ int
+ main ()
+ {
+-gethostbyname();
++char * name="localhost";
++gethostbyname(name);
+   ;
+   return 0;
+ }
+@@ -5774,6 +5797,10 @@
+     LIBS="$ne_sl_save_LIBS -l$lib $NEON_LIBS"
+     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#import <sys/socket.h>
++#import <netinet/in.h>
++#import <arpa/inet.h>
++#import <unistd.h> 
+ 
+ int
+ main ()
+@@ -6173,6 +6200,7 @@
+ 
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++#include <openssl/rsa.h>
+ 
+ int
+ main ()
+@@ -6258,6 +6286,7 @@
+ 
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
++ #include <openssl/ssl.h>
+ 
+ int
+ main ()
+diff -bur neon-0.30.0/src/ne_socket.c neon-0.30.0_patch/src/ne_socket.c
+--- neon-0.30.0/src/ne_socket.c	2013-07-31 23:36:53.000000000 +0800
++++ neon-0.30.0_patch/src/ne_socket.c	2014-09-22 17:46:07.000000000 +0800
+@@ -27,9 +27,9 @@
+ #include "config.h"
+ 
+ #include <sys/types.h>
+-#ifdef HAVE_SYS_UIO_h
++//#ifdef HAVE_SYS_UIO_h
+ #include <sys/uio.h> /* writev(2) */
+-#endif
++//#endif
+ #ifdef HAVE_SYS_TIME_H
+ #include <sys/time.h>
+ #endif
